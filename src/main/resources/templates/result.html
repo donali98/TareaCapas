@@ -6,6 +6,14 @@
     <title>Resultado</title>
 </head>
 <body>
-    <p th:text="${name}"></p>
+    <h1 th:text="${errors.size()} > 0 ? 'Se han encontrado errores: ' : 'Alumno agregado con exito'"></h1>
+    <div th:each="e: ${errors}">
+        <p th:text="${e}"></p>
+        <br>
+    </div>
+    
+    <a href="/ingresar"><button>Agregar nuevo alumno</button></a>
+    
+
 </body>
 </html>

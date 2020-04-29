@@ -3,14 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Alumnos</title>
 </head>
 <body>
-    <h1>Formualrio tarea 2</h1>
-    <form th:action="@{formMethod}" method="post">
+    <h1>Formualrio Alumno</h1>
+    <form th:action="@{ingresar}" method="post">
         <div class="form-group">
+            
+            <!-- Nombre -->
             <label for="name">Nombre</label>
             <input type="text" name="name" id="name">
+
+            <!-- Apellidos -->
+            <label for="lastname">Apellidos</label>
+            <input type="text" name="lastname" id="lastname">
+
+            <!-- Fecha nacimiento -->
+            <label for="birthdate">Fecha de nacimiento</label>
+            <input type="date" name="birthdate" id="birthdate">
+
+            <!-- Lugar de nacimiento -->
+            <label for="birthplace">Lugar de nacimiento</label>
+            <input type="text" name="birthplace" id="birthplace">
+            
+            <!-- Colegio -->
+            <label for="school">Colegio de procedencia</label>
+            <input type="text" name="school" id="school">
+
+            <!-- Telefono fijo -->
+            <label for="homephone">Telefono fijo</label>
+            <input type="text" name="homephone" id="homephone">
+
+            <!-- Telefono movil -->
+            <label for="mobile">Telefono movil</label>
+            <input type="text" name="mobile" id="mobile">               
+
             <button type="submit">Enviar</button>
         </div>
     </form>
